@@ -27,16 +27,16 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full h-screen text-gray-700 py-20 
+      className="w-full h-screen text-black py-20 
       md:leading-10 "
     >
       {/* First */}
-      <section className="">
+      <section className=" w-5/6">
         <motion.p
           initial={{ x: -300 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.9 }}
-          className="text-2xl mx-2
+          className="text-2xl mx-5
           md:text-4xl"
         >
           Graduate at December 2022 with degree of{" "}
@@ -51,17 +51,18 @@ export default function About({}: Props) {
           initial={{ x: 300 }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
-          className=" w-10/12 text-justify pt-16 pb-5 pr-5 pl-5 ml-5 mt-7 bg-gray-100 text-teal-950 relative rounded-l-lg
-          md:text-xl md:pt-24 md:mt-20"
+          className=" w-5/6 text-justify bg-black/90 text-white text-xl relative rounded-l-lg
+          pt-24 pb-5 px-5 mt-40
+          "
         >
           <ul className="absolute top-5 flex gap-5 ">
-            <li className="w-[15px] h-[15px] bg-teal-900 z-0 y-0 rounded-full animate-pulse"></li>
-            <li className="w-[15px] h-[15px] bg-teal-900/60 z-0 y-0 rounded-full animate-pulse"></li>
-            <li className="w-[15px] h-[15px] bg-teal-950/30 z-0 y-0 rounded-full animate-pulse"></li>
+            <li className="w-[15px] h-[15px] bg-red-500 z-0 y-0 rounded-full animate-pulse"></li>
+            <li className="w-[15px] h-[15px] bg-yellow-500 z-0 y-0 rounded-full animate-pulse"></li>
+            <li className="w-[15px] h-[15px] bg-teal-500 z-0 y-0 rounded-full animate-pulse"></li>
           </ul>
           With around two years of working experience, I have decided to fully
           commit on becoming a Full-Stack that Specialized on{" "}
-          <span className="font-medium text-teal-700 underline underline-offset-8">
+          <span className="font-medium text-teal-500 underline underline-offset-8">
             Front-End
           </span>{" "}
           development
@@ -73,8 +74,10 @@ export default function About({}: Props) {
         initial={{ y: 300 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: 0.25 }}
-        className="flex justify-between py-12 text-2xl mx-2 text-teal-900/70
-       md:py-20  md:text-4xl"
+        className="flex   text-black
+        justify-evenly mt-40 text-2xl
+        md:justify-between
+       "
       >
         <SiNextdotjs></SiNextdotjs>
         <SiTailwindcss></SiTailwindcss>
@@ -93,14 +96,15 @@ export default function About({}: Props) {
         initial={{ y: 300 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="px-5 py-24 bg-teal-950/70
-        md:px-20"
+        className=" bg-black/90
+        mt-40 px-10 py-20 mx-5"
       >
         <h1
-          className="text-2xl flex items-center gap-2 font-normal text-white
+          className="flex items-center gap-2  text-white
+          text-2xl 
         md:text-4xl"
         >
-          General Knowledge
+          <span>General Knowledge</span>
           <AiFillLinkedin></AiFillLinkedin>
         </h1>
         <span
@@ -123,36 +127,47 @@ export default function About({}: Props) {
         initial={{ scale: 0.9, opacity: 0.5 }}
         transition={{ duration: 1 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        className="px-5 py-24 bg-teal-900/50
-        md:px-20"
+        className=" text-black
+        mt-40 mx-2"
       >
         <h1
-          className="text-2xl flex items-center gap-2 font-normal text-white
+          className="flex items-center justify-center gap-2  
+          text-2xl
         md:text-4xl"
         >
-          Work Experience
-          <AiFillLinkedin></AiFillLinkedin>
+          <span className="flex">Work Experience</span>
+          <AiFillLinkedin className="text-yellow-500"></AiFillLinkedin>
         </h1>
-        <span
-          className="flex mt-5
-        md:mt-10"
-        >
-          <div className="h-auto w-[2px] bg-teal-300/50 rounded-full" />
-          <ul className="flex flex-col gap-5 mx-5">
-            <li className="flex flex-col text-gray-200">
-              <span className="text-white font-semibold">
+
+        <div className="mt-10">
+          <div
+            className="flex items-center bg-yellow-500 rounded-xl text-white
+        w-5/6 px-5 py-10 gap-5"
+          >
+            {/* <span className="bg-teal-500 p-7 rounded-full"></span> */}
+            <ul className="flex flex-col">
+              <li className="font-semibold">
                 PricewaterhouseCoopers Indonesia
-              </span>
-              Marketing & Communications (website)
-            </li>
-            <li className="flex flex-col text-gray-200">
-              <span className="font-semibold text-white">
-                Transindo Primatama
-              </span>
-              Finance
-            </li>
-          </ul>
-        </span>
+              </li>
+              <li className="font-light">
+                Marketing & Communications (website)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-row-reverse mt-10">
+          <div
+            className="flex  items-center bg-black/90 rounded-xl text-white
+        w-5/6 p-5 gap-5"
+          >
+            {/* <span className="bg-teal-500 p-7 rounded-full"></span> */}
+            <ul className="flex flex-col">
+              <li className="font-semibold">Transindo Primatama</li>
+              <li className="font-extralight">Finance</li>
+            </ul>
+          </div>
+        </div>
       </motion.section>
 
       {/*  Organization*/}
@@ -160,7 +175,8 @@ export default function About({}: Props) {
         initial={{ scale: 0.9, opacity: 0.5 }}
         transition={{ duration: 1 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        className="px-5 py-24 bg-teal-950/40
+        className="px-5 py-24 bg-teal-900/50
+        mt-40
         md:px-20"
       >
         <h1
