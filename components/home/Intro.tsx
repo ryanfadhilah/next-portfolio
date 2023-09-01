@@ -22,21 +22,33 @@ export default function Intro({}: Props) {
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center"
     >
       <BGC></BGC>
-      <Image
-        src={"/profiles.jpeg"}
-        alt="profile"
-        width={120}
-        height={120}
-        className="rounded-full"
-      ></Image>
-      <div className="flex flex-col">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src={"/profiles.jpeg"}
+          alt="profile"
+          width={120}
+          height={120}
+          className="rounded-full"
+        ></Image>
+      </motion.div>
+
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col"
+      >
         <h1 className="text-xl uppercase tracking-[10px]">Ryan Fadhilah</h1>
         <h2 className="text-gray-500 tracking-[2px] pt-2">Softawe Engineer</h2>
         <h3 className="text-gray-400 text-xs pt-10 tracking-[1px]">
           <span>{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h3>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

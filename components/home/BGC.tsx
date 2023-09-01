@@ -15,7 +15,8 @@ export default function BGC({}: Props) {
         }}
         transition={{ duration: 1 }}
         exit={{ opacity: 0, scale: 0.1 }}
-        className="flex md:hidden absolute  border-4 border-teal-900/50 rounded-full h-[500px] w-[500px] mt-52 animate-pulse"
+        className="flex  absolute  border-4 border-teal-900/50 rounded-full h-[500px] w-[500px] mt-52 animate-pulse
+        md:h-[850px] md:w-[850px]"
       />
       {/* <motion.div
         initial={{ opacity: 0 }}

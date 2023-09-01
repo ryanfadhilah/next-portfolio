@@ -90,7 +90,7 @@ export default function About({}: Props) {
       <motion.section
         initial={{ y: 300 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
         className="px-5 py-24 bg-teal-950/70
         md:px-20"
       >

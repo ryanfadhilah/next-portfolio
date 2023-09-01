@@ -38,15 +38,15 @@ export default function MobileNav({}: Props) {
         variants={variants}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
-        className="bg-teal-950/95 backdrop-blur-3xl shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
+        className="bg-gray-100/95 backdrop-blur-3xl shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
       >
         <span
           onClick={() => setIsOpen(false)}
           className="text-4xl absolute z-30 left-4 top-5 cursor-pointer"
         >
-          <IoMdClose></IoMdClose>
+          <IoMdClose className="text-gray-700"></IoMdClose>
         </span>
-        <ul className="h-full flex flex-col justify-center items-center gap-y-16 text-3xl tracking-widest">
+        <ul className="h-full flex flex-col justify-center items-center gap-y-16 text-3xl tracking-widest text-gray-700">
           <Link
             href="/"
             className="custom-hover hover:underline hover:underline-offset-8"
