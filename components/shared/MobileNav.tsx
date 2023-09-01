@@ -27,7 +27,7 @@ export default function MobileNav({}: Props) {
     <nav className=" flex md:hidden text-white">
       {/* Nav */}
       <div
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsOpen(!isOpen)}
         className="text-3xl cursor-pointer text-black"
       >
         <CgMenuRight></CgMenuRight>
@@ -38,10 +38,10 @@ export default function MobileNav({}: Props) {
         variants={variants}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
-        className="bg-gray-100/95 backdrop-blur-3xl shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
+        className="bg-gray-100/90 backdrop-blur-3xl shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
       >
         <span
-          onClick={() => setIsOpen(false)}
+          onClick={() => setIsOpen(!isOpen)}
           className="text-4xl absolute z-30 left-4 top-5 cursor-pointer"
         >
           <IoMdClose className="text-gray-700"></IoMdClose>
