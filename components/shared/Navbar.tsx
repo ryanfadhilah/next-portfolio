@@ -24,7 +24,7 @@ const Navbar = (props: Props) => {
         <Link href="/portfolio" className="custom-hover hover:text-black">
           Portfolio
         </Link>
-        <Link href="/portfolio" className="custom-hover hover:text-black">
+        <Link href="/learn" className="custom-hover hover:text-black">
           How I learn ?
         </Link>
         <Link href="/contact" className="custom-hover hover:text-black">

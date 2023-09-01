@@ -24,7 +24,7 @@ export default function MobileNav({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-black flex md:hidden">
+    <nav className=" flex md:hidden text-white">
       {/* Nav */}
       <div
         onClick={() => setIsOpen(true)}
@@ -38,16 +38,19 @@ export default function MobileNav({}: Props) {
         variants={variants}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
-        className="bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
+        className="bg-teal-950/95 backdrop-blur-3xl shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col"
       >
         <span
           onClick={() => setIsOpen(false)}
-          className="text-4xl absolute z-30 left-4 top-14 cursor-pointer"
+          className="text-4xl absolute z-30 left-4 top-5 cursor-pointer"
         >
           <IoMdClose></IoMdClose>
         </span>
-        <ul className="h-full flex flex-col justify-center items-center gap-y-8 text-3xl tracking-widest">
-          <Link href="/" className="custom-hover hover:text-black">
+        <ul className="h-full flex flex-col justify-center items-center gap-y-16 text-3xl tracking-widest">
+          <Link
+            href="/"
+            className="custom-hover hover:underline hover:underline-offset-8"
+          >
             Home
           </Link>
           <Link href="/about" className="custom-hover hover:text-black">
@@ -55,6 +58,9 @@ export default function MobileNav({}: Props) {
           </Link>
           <Link href="/portfolio" className="custom-hover hover:text-black">
             Portfolio
+          </Link>
+          <Link href="/learn" className="custom-hover hover:text-black">
+            How I learn ?
           </Link>
           <Link href="/collaborate" className="custom-hover hover:text-black">
             Collaborate
