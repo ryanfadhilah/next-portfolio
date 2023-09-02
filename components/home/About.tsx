@@ -32,8 +32,8 @@ export default function About({}: Props) {
     >
       {/* First */}
       <motion.section
-        initial={{ x: -300 }}
-        animate={{ x: 0 }}
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         className=" w-5/6"
       >
@@ -49,8 +49,8 @@ export default function About({}: Props) {
 
       {/* Second */}
       <motion.section
-        initial={{ x: -300 }}
-        animate={{ x: 0 }}
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         className="mx-5 mt-10"
       >
