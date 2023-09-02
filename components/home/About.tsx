@@ -27,7 +27,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full h-screen text-black py-40 
+      className=" text-black pt-40 
       md:leading-10 "
     >
       {/* First */}
@@ -42,7 +42,9 @@ export default function About({}: Props) {
           md:text-4xl"
         >
           Graduate at December 2022 with degree of{" "}
-          <span className="font-semibold text-teal-950">Computer Science</span>{" "}
+          <span className="font-semibold text-teal-950 underline underline-offset-4">
+            Computer Science
+          </span>{" "}
           Majoring at Business Information Technology
         </p>
       </motion.section>
@@ -86,6 +88,7 @@ export default function About({}: Props) {
       </motion.section>
 
       {/*  General*/}
+
       <section
         className=" 
         mt-40 mx-5"
@@ -215,8 +218,8 @@ export default function About({}: Props) {
 
         {/* Second Bubble */}
         <motion.div
-          initial={{ x: 100 }}
-          whileInView={{ x: 0 }}
+          initial={{ scale: 0.9 }}
+          whileInView={{ scale: 1 }}
           transition={{ duration: 1 }}
           className="w-full flex flex-row-reverse mt-10"
         >
