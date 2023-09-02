@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`scroll-smooth  ${inter.className}`}>
         <div className=" max-w-4xl mx-auto scroll-smooth">{children}</div>
-        <Footer></Footer>
         <Navbar></Navbar>
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -20,3 +20,13 @@
     @apply transition-all ease-out duration-200 cursor-pointer;
   }
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: rgb(112, 151, 151);
+  transform-origin: 0%;
+}

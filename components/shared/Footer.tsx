@@ -12,8 +12,8 @@ export default function Footer({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" fixed flex flex-col justify-between items-center gap-3
-     backdrop-blur-sm bottom-0 z-30 w-full  px-3 py-5 tracking-[2px] text-gray-500 bg-white/5 text-3xl"
+      className=" fixed flex flex-col justify-between items-center gap-3 backdrop-blur-sm 
+    bottom-0 z-30 w-full  py-5  text-gray-500 bg-white/5 text-3xl"
     >
       <div className="flex gap-5">
         <BiSolidChevronsLeft className="hover:text-black transition-all ease-out duration-200"></BiSolidChevronsLeft>
