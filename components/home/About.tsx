@@ -94,9 +94,16 @@ export default function About({}: Props) {
           initial={{ x: -100, opacity: 0.5 }}
           transition={{ duration: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className="flex items-start text-5xl gap-3"
+          className="flex items-start text-5xl gap-3 relative"
         >
           <span>General Knowledge</span>
+          <motion.span
+            initial={{ x: -50, opacity: 0.5 }}
+            transition={{ duration: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+          ></motion.span>
+
           {/* <AiFillLinkedin className="text-yellow-500 text-2xl"></AiFillLinkedin> */}
         </motion.h1>
         <ul className="flex flex-col gap-5 pt-10 text-xl">
@@ -196,7 +203,7 @@ export default function About({}: Props) {
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1 }}
-          className="flex items-center bg-black rounded-xl text-white
+          className="flex items-center  bg-teal-700/50 rounded-xl text-white
         w-5/6 px-5 py-10 gap-5 mt-10"
         >
           {/* <span className="bg-teal-500 p-7 rounded-full"></span> */}
@@ -214,7 +221,7 @@ export default function About({}: Props) {
           className="w-full flex flex-row-reverse mt-10"
         >
           <div
-            className="flex  items-center bg-black/70 rounded-xl text-white
+            className="flex  items-center bg-teal-950 rounded-xl text-white
         w-5/6 p-5 gap-5"
           >
             {/* <span className="bg-teal-500 p-7 rounded-full"></span> */}
