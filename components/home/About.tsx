@@ -29,11 +29,13 @@ export default function About({}: Props) {
 
   return (
     <>
+      {/* Progress */}
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       ></motion.div>
 
+      {/* Main */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -79,9 +81,9 @@ export default function About({}: Props) {
 
         {/* Logo */}
         <motion.section
-          initial={{ y: 300 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 1, delay: 0.25 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
           className="flex text-teal-950
            mt-40 text-4xl
           md:text-4xl"
